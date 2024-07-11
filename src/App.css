@@ -1,0 +1,41 @@
+body {
+  padding: 20px 5rem;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 1vmin);
+  color: black;
+}
+
+.App-header h2 {
+  font-weight: 700;
+  background-color: rgba(116, 116, 214, 0.801);
+  font-size: 1.2rem;
+}
+
+.App-header input {
+  width: 100%;
+  max-width: 20rem;
+  height: 2rem;
+  border-bottom: 2px solid;
+  border-top: 1px solid;
+  padding: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .App-header {
+      width: 100%;
+    }
+
+    .App-header input {
+      display: none;
+    }
+
+    body {
+      padding: 15px;
+    }
+}
