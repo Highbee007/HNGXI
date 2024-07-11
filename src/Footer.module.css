@@ -1,14 +1,5 @@
 .footer {
-    background-color: black;
     height: 10rem;
-    color: white;
-}
-
-.footer input {
-    width: 100%;
-    max-width: 5rem;
-    border: none;
-    border-radius: 5px;
 }
 
 .footer button {
@@ -20,7 +11,11 @@
 
 .footer label {
     font-size: 15px;
-    font-family: DM Mono Medium;
+    font-family: Quicksand;
+}
+
+.footer input {
+    display: block;
 }
 
 .subscribe {
