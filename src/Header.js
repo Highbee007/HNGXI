@@ -5,11 +5,11 @@ import CartIcon from "./UI/Icon/CartIcon";
 const Header = () => {
   return (
     <nav className="App-header">
-      <Link to="/">
+      <Link to="/" className="link">
         <h2>SHOP THE LOOK</h2>
       </Link>
       <input type="search" placeholder="Search" />
-      <Link to="/cart">
+      <Link to="/cart" className="link">
         <CartIcon />
       </Link>
     </nav>
