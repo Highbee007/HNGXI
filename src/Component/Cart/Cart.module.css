@@ -2,3 +2,11 @@
     display: flex;
     justify-content: space-between;
 }
+
+.modal {
+    width: 100%;
+    height: 30rem;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}

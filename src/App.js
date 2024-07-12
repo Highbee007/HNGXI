@@ -129,9 +129,10 @@ function App() {
   return (
     <Fragment>
       <Router>
-        <Header />
+          <Header />
+          <div>
         <Routes>
-          <Route path="/" element={<ProductList products={DUMMY_DATA} />} />
+          <Route path="/HNGXI" exact element={<ProductList products={DUMMY_DATA} />} />
           <Route
             path="/product/:productId"
             element={<ProductView products={DUMMY_DATA} toCart={addToCart} />}
@@ -141,6 +142,7 @@ function App() {
             element={
               <Cart
                 items={cartItem}
+                total={calculateTotal}
                 increase={increaseQuantity}
                 decrease={decreaseQuantity}
                 removeFromCart={removeFromCart}
@@ -158,6 +160,7 @@ function App() {
             }
           />
         </Routes>
+        </div>
       </Router>
       <Footer />
     </Fragment>

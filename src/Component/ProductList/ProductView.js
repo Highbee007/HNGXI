@@ -13,7 +13,9 @@ const ProductView = (props) => {
 
   return (
     <Fragment>
-      <p>{`< BACK`}</p>
+      <Link to="/HNGXI">
+        <button className={style.nav}>{"< BACK"}</button>
+      </Link>
       <div className={style.preview}>
         <div className={style.img}>
           <img src={product.image} alt={product.name} />

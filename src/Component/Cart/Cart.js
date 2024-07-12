@@ -8,7 +8,12 @@ const Cart = (props) => {
   return (
     <div className={style.cart}>
       {props.items.length === 0 ? (
-        <h3>Your Cart is Empty</h3>
+        <div className={style.modal}>
+          <h3>Your Cart is Empty</h3>
+          <Link to="/HNGXI">
+            <button>Return to Shop</button>
+          </Link>
+        </div>
       ) : (
         <ul>
           {props.items.map((item) => (

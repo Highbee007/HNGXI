@@ -5,7 +5,7 @@ import CartIcon from "./UI/Icon/CartIcon";
 const Header = () => {
   return (
     <nav className="App-header">
-      <Link to="/" className="link">
+      <Link to="/HNGXI" className="link">
         <h2>SHOP THE LOOK</h2>
       </Link>
       <input type="search" placeholder="Search" />
