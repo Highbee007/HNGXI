@@ -1,0 +1,37 @@
+.formGroup {
+    width: 100%;
+    max-width: 40rem;
+    flex-wrap: wrap;
+}
+
+.checkout {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    max-width: 30rem;
+    width: 30%;
+    height: auto;
+}
+
+.formControl label {
+    font-size: 1.1rem;
+    font-family: DM Mono;
+}
+
+.formControl input{
+    width: 90%;
+    max-width: 19rem;
+    height: 1.5rem;
+}
+
+.formControl input[type= 'checkbox'] {
+    width: unset;
+    display: inline;
+    vertical-align: center;
+}
+
+.formControl {
+    width: 20rem;
+}

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Cart = (props) => {
   const totals = props.total;
-
+  console.log(totals);
   return (
     <div className={style.cart}>
       {props.items.length === 0 ? (

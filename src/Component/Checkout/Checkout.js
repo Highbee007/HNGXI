@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import img from './alpridephoto-9uxRcupG36I-unsplash.jpg';
-import style from './Checkout.module.css'; // Assuming you have a CSS module
+import style from './Checkout.module.css';
 
 const Checkout = (props) => {
   const total = props.total();
@@ -21,9 +21,10 @@ const Checkout = (props) => {
   };
 
   return (
+     <Fragment> <h2>SHIPPING ADDRESS</h2>
     <div className={style.checkout}>
-      <h2>SHIPPING ADDRESS</h2>
       <div className={style.formGroup}>
+        <div>
         <div className={style.formControl}>
           <label htmlFor="street">Street Address</label>
           <input
@@ -68,18 +69,20 @@ const Checkout = (props) => {
             checked={shippingDetails.saveDetails}
             onChange={handleChange}
           />
-          <label htmlFor="saveDetails">Save my Shipping details</label>
-        </div>
+          <label for="saveDetails">Save my Shipping details</label>
+        </div></div>
+        <div>
         <button
-          className={style.payButton}
+          className={style.button}
           onClick={() => props.checkout()}
           aria-label={`Pay ${total.total}`}
         >
           PAY #{total.total.toFixed(2)}
         </button>
       </div>
+      </div>
       <img src={img} alt="payment" className={style.paymentImg} />
-    </div>
+    </div></Fragment>
   );
 };
 

@@ -109,7 +109,7 @@ function App() {
 
   const calculateTotal = () => {
     const subTotal = cartItem.reduce(
-      (total, item) => total + item.price * item.quantity,
+      (total, item) => total + item.price * (item.quantity || 1),
       0
     );
     const taxes = subTotal * 0.1;
@@ -123,7 +123,7 @@ function App() {
   };
 
   const checkoutHandler = () => {
-    alert("Confirming Payment...");
+    alert("Payment Confirmed...");
   };
 
   return (
@@ -153,7 +153,7 @@ function App() {
             path="/checkout"
             element={
               <Checkout
-                // items={cartItem}
+                items={cartItem}
                 total={calculateTotal}
                 checkout={checkoutHandler}
               />
