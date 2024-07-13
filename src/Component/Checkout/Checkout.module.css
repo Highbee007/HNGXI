@@ -1,37 +1,83 @@
+.checkout input, .checkout button, .checkout label {
+    margin: 10px;
+}
+
 .formGroup {
-    width: 100%;
-    max-width: 40rem;
-    flex-wrap: wrap;
+  width: 100%;
+  max-width: 40rem;
+  flex-wrap: wrap;
 }
 
 .checkout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pay button {
+  display: block;
+  width: 100%;
+  background-color: rgba(116, 116, 214, 0.801);
+  height: 2rem;
+  border: none;
+  font-family: Quicksand;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.paymentImg {
+  max-width: 30rem;
+  width: 30%;
+  height: auto;
+}
+
+.control label, .card label {
+  font-size: 1.1rem;
+  font-family: DM Mono;
+}
+
+.card input{
+    width: 100%;
+    max-width: 40rem;
+    height: 1.5rem;
+}
+
+.control input {
+  width: 95%;
+  max-width: 20rem;
+  height: 1.5rem;
+
+}
+
+.others {
     display: flex;
     justify-content: space-between;
 }
 
-img {
-    max-width: 30rem;
-    width: 30%;
-    height: auto;
+.control input[type="checkbox"] {
+  width: unset;
+  display: inline;
+  vertical-align: center;
 }
 
-.formControl label {
-    font-size: 1.1rem;
-    font-family: DM Mono;
+.control {
+  width: 20rem;
 }
 
-.formControl input{
-    width: 90%;
-    max-width: 19rem;
-    height: 1.5rem;
+.back {
+    width: 100%;
+    max-width: 15rem;
+    height: 2rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    font-family: DM Mono ;
+    text-align: left;
 }
 
-.formControl input[type= 'checkbox'] {
-    width: unset;
-    display: inline;
-    vertical-align: center;
-}
-
-.formControl {
-    width: 20rem;
+@media screen and (max-width: 500px) {
+    .paymentImg {
+        display: none;
+    }
 }
